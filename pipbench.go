@@ -10,7 +10,7 @@ import (
 
 func main(){
 	start := time.Now()
-	outFile := pictFunc.MkMandelMapQ_pr(2560, 1440, 4, 0.016, -0.667, 0.009, 0, 0, 0.36)
+	outFile := pictFunc.MkMandelMapQ_pr(3840, 2160, 12, 0.016, -0.667, 0.009, 0, 0, 0.36)
 	end := time.Now()
 	fmt.Printf("%0.2fsec\n", (end.Sub(start)).Seconds())
 

@@ -53,7 +53,7 @@ func MkMandelMapQ_pr(w, h, cnum int, rn, cpr, in, zx, zy, cpy float64) Pict {
 	if cnum < cpus {
 		cpus = cnum
 	}
-	println("Num CPU :", cpus)
+//	println("Num CPU :", cpus)
 
 	runtime.GOMAXPROCS(cpus)
 	var wg sync.WaitGroup
@@ -98,6 +98,7 @@ func MkMandelMapQ_pr(w, h, cnum int, rn, cpr, in, zx, zy, cpy float64) Pict {
 	wg.Wait()
 
 	return p
+
 }
 
 func gaus5(cp Pict) []uint8 {
